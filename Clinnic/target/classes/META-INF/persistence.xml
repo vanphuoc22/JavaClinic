@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.owen_Clinnic_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.owen.pojo.Nurse</class>
+    <class>com.owen.pojo.Appointment</class>
+    <class>com.owen.pojo.PrescriptionItem</class>
+    <class>com.owen.pojo.Sickperson</class>
+    <class>com.owen.pojo.Doctor</class>
+    <class>com.owen.pojo.Payment</class>
+    <class>com.owen.pojo.Prescription</class>
+    <class>com.owen.pojo.Medicine</class>
+    <class>com.owen.pojo.User</class>
+    <class>com.owen.pojo.Role</class>
+    <class>com.owen.pojo.ScheduleDetail</class>
+    <class>com.owen.pojo.Shift</class>
+    <class>com.owen.configs.User</class>
+    <class>com.owen.configs.ScheduleClinic</class>
+    <class>com.owen.configs.Appointment</class>
+    <class>com.owen.configs.ScheduleDetail</class>
+    <class>com.owen.configs.Shift</class>
+    <class>com.owen.configs.Prescription</class>
+    <class>com.owen.configs.Role</class>
+    <class>com.owen.configs.Payment</class>
+    <class>com.owen.configs.PrescriptionItem</class>
+    <class>com.owen.configs.Medicine</class>
+    <class>com.owen.pojo.ServiceItems</class>
+    <class>com.owen.pojo.Service</class>
+    <class>com.owen.pojo.Appointment_1</class>
+    <class>com.owen.pojo.Payment_1</class>
+    <class>com.owen.pojo.ServiceItems_1</class>
+    <class>com.owen.pojo.Shift_1</class>
+    <class>com.owen.pojo.PrescriptionItem_1</class>
+    <class>com.owen.pojo.Role_1</class>
+    <class>com.owen.pojo.Service_1</class>
+    <class>com.owen.pojo.Medicine_1</class>
+    <class>com.owen.pojo.ScheduleDetail_1</class>
+    <class>com.owen.pojo.Prescription_1</class>
+    <class>com.owen.pojo.Unit</class>
+    <class>com.owen.pojo.Bill</class>
+    <class>com.owen.pojo.Tienkham</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/clinicdb?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="Admin@123"/>
+    </properties>
+  </persistence-unit>
+</persistence>

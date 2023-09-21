@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout"
+                template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header"
+                       value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    <definition name="baseLayoutAdmin"
+                template="/WEB-INF/layout_admin/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header"
+                       value="/WEB-INF/layout_admin/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/layout_admin/footer.jsp" />
+    </definition>
+    <definition name="baseLayoutDoctor"
+                template="/WEB-INF/layout_doctor/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header"
+                       value="/WEB-INF/layout_doctor/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/layout_doctor/footer.jsp" />
+    </definition>
+    <definition name="baseLayoutNurse"
+                template="/WEB-INF/layout_nurse/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header"
+                       value="/WEB-INF/layout_nurse/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/layout_nurse/footer.jsp" />
+    </definition>
+    <definition name="indexyta" extends="baseLayoutNurse">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/index.jsp" />
+    </definition>
+    <definition name="indexbacsi" extends="baseLayoutDoctor">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/index.jsp" />
+    </definition>
+    <definition name="indexadmin" extends="baseLayoutAdmin">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/index.jsp" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/index.jsp" />
+    </definition>
+    <definition name="thongke" extends="baseLayoutAdmin">
+        <put-attribute name="title" value="Thống Kê Bệnh Nhân" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/admin/thongke.jsp" />
+    </definition>
+    <definition name="thongkedoanhthu" extends="baseLayoutAdmin">
+        <put-attribute name="title" value="Thống Kê Doanh Thu" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/admin/thongkedoanhthu.jsp" />
+    </definition>
+    <definition name="users" extends="baseLayoutAdmin">
+        <put-attribute name="title" value="Quản ly Nguoi Dung" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/admin/users.jsp" />
+    </definition>
+    <definition name="themtaikhoan" extends="baseLayoutAdmin">
+        <put-attribute name="title" value="Thêm tài khoản" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/admin/themtaikhoan.jsp" />
+    </definition>
+    <definition name="quanlytaikhoan" extends="baseLayoutAdmin">
+        <put-attribute name="title" value="Quản lý tài khoản" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/admin/quanlytaikhoan.jsp" />
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Dang nhap" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/login.jsp" />
+    </definition>
+    <definition name="lich" extends="baseLayout">
+        <put-attribute name="title" value="Lich" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/lich.jsp" />
+    </definition>
+    <definition name="home" template="/WEB-INF/pages/home.jsp"  >
+        <put-attribute name="title" value="Trang chủ" />
+    </definition>
+    <definition name="booking" extends="baseLayout">
+        <put-attribute name="title" value="Dat lich" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/user/booking.jsp" />
+    </definition>
+    <definition name="otp" extends="baseLayout">
+        <put-attribute name="title" value="Nhập OTP.........." />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/nhapotp.jsp" />
+    </definition>
+    <definition name="quenmatkhau" extends="baseLayout">
+        <put-attribute name="title" value="Quên mật khẩu" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/quenmatkhau.jsp" />
+    </definition>
+    <definition name="xatminhotp" extends="baseLayout">
+        <put-attribute name="title" value="Xát minh OTP" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/xatminhotp.jsp" />
+    </definition>
+    <definition name="quanlythuoc" extends="baseLayoutAdmin">
+        <put-attribute name="title" value="Quan ly Thuoc" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/admin/quanlythuoc.jsp" />
+    </definition>
+    <definition name="xemlichlam" extends="baseLayoutDoctor">
+        <put-attribute name="title" value="Lich Lam" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/doctor/xemlichlam.jsp" />
+    </definition>
+    <definition name="doctor" extends="baseLayoutDoctor">
+        <put-attribute name="title" value="Thông Tin Bác Sĩ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/doctor/doctor.jsp" />
+    </definition>
+    <definition name="khambenh" extends="baseLayoutDoctor">
+        <put-attribute name="title" value="Khám Bệnh" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/doctor/khambenh.jsp" />
+    </definition>
+    <definition name="nurse" extends="baseLayoutNurse">
+        <put-attribute name="title" value="Thông Tin Y Tá" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/nurse/nurse.jsp" />
+    </definition>
+    <definition name="xeplichkham" extends="baseLayoutNurse">
+        <put-attribute name="title" value="Xếp lịch khám" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/nurse/xeplichkham.jsp" />
+    </definition>
+    <definition name="dangkylam" extends="baseLayoutDoctor">
+        <put-attribute name="title" value="Dang ky lam" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/doctor/dangkylam.jsp" />
+    </definition>
+    <definition name="dangkylamviec" extends="baseLayoutNurse">
+        <put-attribute name="title" value="Dang ky lam" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/nurse/dangkylam.jsp" />
+    </definition>
+    <definition name="kethuoc" extends="baseLayoutDoctor">
+        <put-attribute name="title" value="Ke thuoc" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/doctor/kethuoc.jsp" />
+    </definition>
+    <definition name="lichsukham" extends="baseLayoutDoctor">
+        <put-attribute name="title" value="Lich su kham" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/doctor/lichsukham.jsp" />
+    </definition>
+    <definition name="prescription" template="/WEB-INF/views/prescription.jsp"  >
+        <put-attribute name="title" value="Nháp" />
+    </definition>
+    <definition name="thanhtoan" extends="baseLayoutNurse">
+        <put-attribute name="title" value="Thanh Toán" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/nurse/thanhtoan.jsp" />
+    </definition>
+    <definition name="xemlichlamyta" extends="baseLayoutNurse">
+        <put-attribute name="title" value="Xem lịch làm" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/nurse/xemlichlam.jsp" />
+    </definition>
+    <definition name="admin" extends="baseLayoutAdmin">
+        <put-attribute name="title" value="Thanh Toán" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/admin/admin.jsp" />
+    </definition>
+    <definition name="saplichlam" extends="baseLayoutAdmin">
+        <put-attribute name="title" value="Lich lam" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/admin/saplichlam.jsp" />
+    </definition>
+    
+
+
+    
+</tiles-definitions>
